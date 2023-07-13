@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>zone</title>
+</head>
+<body>
+    <header>
+        <img src="image/logo.png" alt="">
+    </header>
+    <main>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                    <div class="con8">
+                        <h3>تفاصيل الطلب</h3>
+                        <p>771087061#:رقم الطلب</p>
+                    </div>
+                    <div class="con9">
+                    <span id="dayElement"></span>
+                    <span><script>
+                        const today = new Date();                    
+                        const year = today.getFullYear();
+                        const month = today.getMonth() + 1;
+                        const day = today.getDate();                    
+                        const dateString = `${year}/${month.toString().padStart(2, '0')}/${day.toString().padStart(2, '0')}`;                    
+                        document.write(dateString);
+                        </script></span>
+                        <span id="time"></span>
+                    </div>
+                </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="con1">
+                            <h3>:مصدرة من</h3>
+                            <p>المتجر الالكتروني : اوزون ستور| Store Ozon</p>
+                            <p>الرقم الضریبي : 314587234670</p>
+                            <p>السعودیة</p>
+                            <p>info@ozonstoreksa.com</p>
+                        </div>
+                        <div class="con2">
+                            <h3>:مصدرة إلي</h3>
+                            <p>شذى الدوسري</p>
+                            <p>وادي الدواسر الجوبه</p>
+                            <p>0509643664</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="con3">
+                            <h3>تفاصيل الدفع:</h3>
+                            <div class="sub_con1">
+                                <div class="super_sub1"><p>المبلغ:</p></div>                                
+                                <div class="super_sub2"><p>ر.س4599</p></div>                                
+                            </div>
+                            <div class="sub_con2">
+                                <div class="super_sub3"><p>الدفعه الاولي:</p></div>                                
+                                <div class="super_sub4"><p>ر.س1000</p></div>                                
+                            </div>
+                            <p>والباقي اقساط على 24 شھر</p>
+                            <div class="sub_con5">
+                                <div class="super_sub9"><p>طريقة الدفع:</p></div>                                
+                                <div class="super_sub10"><p>حوالة علي حساب المتجر</p></div>                                
+                            </div>
+                        </div>
+                        <div class="con4">
+                            <h3>تفاصيل الشحن :</h3>
+                            <p>بواسطة :</p>
+                            <div class="sub_con3">
+                                <div class="super_sub5"><p>رقم الشحنة:</p></div>                                
+                                <div class="super_sub6"><p>ر.س#687415684168</p></div>                                
+                            </div>
+                            <div class="sub_con4">
+                                <div class="super_sub7"><p>الوقت المتوقع للشحن:</p></div>                                
+                                <div class="super_sub8"><p>(من 8 الي 48 ساعة)</p></div>                                
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <div class="cont1">
+                        <img src="image/1.jpg" alt="">
+                        <div class="data">
+                        <h3>المنتج</h3>
+                        <p>ابل ایفون 14 برو، 128 جیجا ،اسود , افتراضي</p>
+                        </div>
+                    </div>
+                    <div class="cont2">
+                        <h3>الكميه</h3>
+                        <p>1</p>
+                    </div>
+                    <div class="cont3">
+                        <h3>السعر</h3>
+                        <p>ر.س45456</p>
+                    </div>
+                    <div class="cont4">
+                        <h3>الاجمالي</h3>
+                        <p>27687ر.س</p>
+                    </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="con5">
+                            <p>اجمالي الطلب:</p>
+                            <p>94969 ر.س</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="con6">
+                            <p>الدفعة الاولى :</p>
+                            <p>94969 ر.س</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="con7">
+                            <p>المتبقي:</p>
+                            <p>94969 ر.س</p>
+                        </div>
+                    </td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </main>
+</body>
+<script>
+    // Create an array of Arabic weekdays
+var arabicWeekdays = [
+  "الأحد",
+  "الاثنين",
+  "الثلاثاء",
+  "الأربعاء",
+  "الخميس",
+  "الجمعة",
+  "السبت"
+];
+
+// Get the current date
+var currentDate = new Date();
+
+// Get the day of the week
+var dayIndex = currentDate.getDay();
+
+// Get the Arabic weekday from the array
+var arabicDay = arabicWeekdays[dayIndex];
+
+// Display the Arabic weekday on the page
+document.getElementById("dayElement").textContent = arabicDay;
+
+// Function to update the time
+function updateTime() {
+  var currentTime = new Date();
+
+  // Extract the hours, minutes, and seconds
+  var hours = currentTime.getHours();
+  var minutes = currentTime.getMinutes();
+
+  // Format the time as HH:MM:SS
+  var timeString = hours + ":" + minutes ;
+
+  // Update the time in the DOM
+  document.getElementById("time").textContent = timeString;
+}
+
+// Call the updateTime function every second
+setInterval(updateTime, 1000);
+
+</script>
+</html>

@@ -1,0 +1,91 @@
+header img{
+    width: 150px;
+}
+header{
+    text-align: center;
+}
+
+table{
+    border: 1px solid;
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px 10%;
+    direction: rtl;
+    font-size: 15px;
+    font-family: 'Droid Arabic Naskh';
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+tr td{
+    margin-right: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+tr{
+    border-bottom: 1px solid;
+    width: 100%;
+    display: flex;
+}
+h3{
+    margin: 0px;
+    padding: 0px;
+
+}
+.sub_con1,
+.sub_con2,
+.sub_con3,
+.sub_con4,
+.sub_con5{
+    display: flex;
+    justify-content: space-between;
+}
+.super_sub3 p,
+.super_sub1 p{
+padding: 0px;
+margin: 10px 0px;
+}
+.super_sub2,
+.super_sub4,
+.super_sub6,
+.super_sub8,
+.super_sub10{
+    margin-left: 15px;
+}
+tr:first-child td{
+    display: flex;
+    justify-content: space-between;
+}
+.con1,
+.con2,
+.con3,
+.con4,
+.con8,
+.con9{
+    margin-top: 10px;
+    width: 50%;
+}
+.con5,
+.con6,
+.con7{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0px 0px 0px 20px;
+}
+
+ td img{
+    width: 50px;
+    margin-left: 20px;
+}
+
+tr:nth-child(4) td{
+display: flex;
+}
+
+.cont1{
+    display: flex;
+}
